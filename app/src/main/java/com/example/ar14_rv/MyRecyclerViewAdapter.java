@@ -70,13 +70,13 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), NewPage.class);
-                    intent.putExtra("zipcode", mv_data.get(position));
-                    view.getContext().startActivity(intent);
-                }
-            });
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), NewPage.class);
+                intent.putExtra("zipcode", mv_data.get(position));
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     public int backgroundColor(int temp) {
