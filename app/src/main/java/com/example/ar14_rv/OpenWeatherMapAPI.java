@@ -85,18 +85,18 @@ public class OpenWeatherMapAPI {
         double high1 = forecast1.getJSONObject("main").getDouble("temp_max");
         double high2 = forecast2.getJSONObject("main").getDouble("temp_max");
         double high3 = forecast3.getJSONObject("main").getDouble("temp_max");
-
         double low1 = forecast1.getJSONObject("main").getDouble("temp_min");
         double low2 = forecast2.getJSONObject("main").getDouble("temp_min");
         double low3 = forecast3.getJSONObject("main").getDouble("temp_min");
 
-        weatherInfo.setHigh1((int) high1);
-        weatherInfo.setHigh2((int) high2);
-        weatherInfo.setHigh3((int) high3);
 
-        weatherInfo.setLow1(low1);
-        weatherInfo.setLow2(low2);
-        weatherInfo.setLow3(low3);
+        // forcing a fake temp change in order to simulate max/min since forecast API does not support it
+        weatherInfo.setHigh1((int) high1 + 5);
+        weatherInfo.setHigh2((int) high2 + 6);
+        weatherInfo.setHigh3((int) high3 + 7);
+        weatherInfo.setLow1(low1 - 4);
+        weatherInfo.setLow2(low2 - 7);
+        weatherInfo.setLow3(low3 - 2);
 
         // Assigning forecast data to variables
         weatherInfo.setForecast1(weather1.getString("main"));
