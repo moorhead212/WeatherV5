@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_cityBig"
+        android:layout_width="0dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="81dp"
+        android:text="CITY"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_iconBig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_iconBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="@font/climacons"
+        android:text="!"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tempBig"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cityBig"
+        app:layout_constraintStart_toStartOf="@+id/tv_cityBig" />
+
+    <TextView
+        android:id="@+id/tv_tempBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:text="TEMP"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/nxtHigh01"
+        app:layout_constraintEnd_toEndOf="@+id/tv_iconBig"
+        app:layout_constraintStart_toStartOf="@+id/tv_iconBig" />
+
+    <TextView
+        android:id="@+id/nxtDay01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nxtHigh01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nxtHigh01" />
+
+    <TextView
+        android:id="@+id/nxtDay02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nxtDay01" />
+
+    <TextView
+        android:id="@+id/nxtDay03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="138dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nxtForecast01" />
+
+    <TextView
+        android:id="@+id/nxtHigh01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="280dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nxtLow01" />
+
+    <TextView
+        android:id="@+id/nxtHigh02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/nxtLow02"
+        app:layout_constraintTop_toBottomOf="@+id/nxtHigh01" />
+
+    <TextView
+        android:id="@+id/nxtLow02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nxtHigh02"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/nxtLow01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nxtHigh01"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/nxtHigh03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/nxtLow03"
+        app:layout_constraintTop_toBottomOf="@+id/nxtHigh02" />
+
+    <TextView
+        android:id="@+id/nxtLow03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nxtHigh03"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/nxtForecast01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/climacons"
+        android:text="!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nxtDay01"
+        app:layout_constraintEnd_toStartOf="@+id/nxtHigh01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nxtDay01" />
+
+    <TextView
+        android:id="@+id/nxtForecast02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/climacons"
+        android:text="!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nxtDay02"
+        app:layout_constraintEnd_toStartOf="@+id/nxtHigh02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nxtDay02" />
+
+    <TextView
+        android:id="@+id/nxtForecast03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/climacons"
+        android:text="!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nxtDay03"
+        app:layout_constraintEnd_toStartOf="@+id/nxtHigh03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nxtDay03" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

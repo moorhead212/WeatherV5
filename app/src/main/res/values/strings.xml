@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">A14-RV</string>
+    <string name="rc_strTitle">RecyclerView List Example 04</string>
+    <string name="icon_thunderstorm">F</string>
+    <string name="icon_drizzle">-</string>
+    <string name="icon_rain">$</string>
+    <string name="icon_snow">9</string>
+    <string name="icon_fog">&lt;</string>
+    <string name="icon_clear">I</string>
+    <string name="icon_clouds">!</string>
+    <string name="icon_unknown">BANANA</string>
+</resources>
